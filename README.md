@@ -1,6 +1,6 @@
 # tv-clip-recreator · 剧集剪辑二创引擎
 
-一个 WorkBuddy Skill：把任意一部剧集变成短视频二创内容的标准流水线。
+一个 [Agent Skills 开放标准](https://agentskills.io)技能：把任意一部剧集变成短视频二创内容的标准流水线。兼容 WorkBuddy、Codex CLI、Claude Code 等支持该标准的工具。
 
 **引擎与剧集解耦**——流程、规范、方法论全部通用；每部剧只是 `shows/` 目录下一份可插拔的档案文件。已适配《老友记》《绝望主妇》《冰与火之歌》，适配新剧只需回答 5 个问题。
 
@@ -19,8 +19,15 @@
 
 ## 安装
 
+本 skill 遵循 [Agent Skills 开放标准](https://agentskills.io)，同一份文件可在任何支持该标准的工具中使用：
+
+| 工具 | 安装方式 |
+|---|---|
+| WorkBuddy | `cp -r tv-clip-recreator ~/.workbuddy/skills/` |
+| Codex CLI | `cp -r tv-clip-recreator ~/.codex/skills/`（或放入仓库的 `.codex/skills/`） |
+| Claude Code | `cp -r tv-clip-recreator ~/.claude/skills/` |
+
 ```bash
-cp -r tv-clip-recreator ~/.workbuddy/skills/
 pip install -r requirements.txt   # PyMuPDF / openpyxl / Pillow / faster-whisper
 ```
 
