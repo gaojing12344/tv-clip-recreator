@@ -1,0 +1,13 @@
+# 本机环境配置（模板）
+
+复制本文件为 `config.md` 并填写。`config.md` 已被 .gitignore 排除，不会进仓库——你的私有路径只留在本机。
+
+```markdown
+# 环境配置
+- 工作根目录: /path/to/your/workspace
+- ffmpeg: /usr/local/bin/ffmpeg
+- ffprobe: /usr/local/bin/ffprobe
+- 封面字体: /path/to/SourceHanSans.ttf
+- Python: /usr/bin/python3
+- 配置日期: YYYY-MM-DD
+```
